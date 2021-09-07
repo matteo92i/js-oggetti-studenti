@@ -5,9 +5,9 @@ var studente = {
 }
 
 
-var firstStudentHtml = document.querySelector('.first-student');
+var firstStudentHtml = document.querySelector('#first-student');
 
-for (var key in student) {
+for (var key in studente){
     firstStudentHtml.innerHTML += key + ': ' + studente[key] + '<br />';
 }
 
@@ -26,7 +26,7 @@ var listaStudenti = [
     }
 ];
 
-for (var i = 0; i < studentsList.length; i++) {
+for (var i = 0; i < listaStudenti.length; i++) {
     console.log(listaStudenti[i].nome, listaStudenti[i].cognome);
    }
 
